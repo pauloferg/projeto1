@@ -1,0 +1,158 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: #5f2d04be;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slogan {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor ao passar o mouse */
+}
+
+p {
+
+font-family:'Courier New', Courier, monospace;
+text-align: center;
+padding: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Estilo das seções */
+section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner img {
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sucos img, .lanches img {
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais, .newsletter, .contato {
+    margin: 10px 0;
+}
+
+.redes-sociais a, .newsletter button {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #ffcc00; /* Cor ao passar o mouse */
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* Estilo do botão de inscrição */
+.newsletter button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #e6b800; /* Cor ao passar o mouse */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .sucos img, .lanches img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
